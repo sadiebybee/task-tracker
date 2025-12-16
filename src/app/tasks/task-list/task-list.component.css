@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Mogra&family=Racing+Sans+One&family=Radley:ital@0;1&display=swap");
+/* ===== Task List Container ===== */
+.task-list {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: linear-gradient(90deg, #d4cbe5, #bea8aa);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px #2e4057;
+}
+
+/* Heading */
+.task-list h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: #2e4057;
+  margin-bottom: 1rem;
+  font-family: "Luckiest Guy", sans-serif;
+}
+
+/* ===== Task Controls ===== */
+.task-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.task-controls input[type="text"] {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #2e4057;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.task-controls input[type="text"]:focus {
+  border-color: #2e4057;
+  outline: none;
+}
+
+.task-controls button {
+  padding: 0.5rem 1.2rem;
+  background-color: #6b7280;
+  color: #fff;
+  border-radius: 8px;
+  border: 1px solid #2e4057;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.task-controls button:hover {
+  background-color: #6b7280;
+  transform: scale(1.05);
+}
+
+/* ===== No Tasks Message ===== */
+.task-list p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #2e4057;
+  margin-top: 1rem;
+}
+/* ===== Task Row ===== */
+.task-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr auto;
+  gap: 1.5rem;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.task-row:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== Main ===== */
+.task-main h3 {
+  color: #2e4057;
+  font-family: "Racing Sans One", sans-serif;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.task-main .due {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* ===== Status ===== */
+.task-status {
+  font-weight: 700;
+  font-family: "Racing Sans One", sans-serif;
+  color: #2e4057;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #7c7f65;
+  opacity: 0.7;
+}
+
+/* ===== Actions ===== */
+.task-actions button {
+  margin-left: 0.5rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.task-actions button:hover {
+  transform: scale(1.05);
+}
+
+/* View */
+.task-actions button:nth-child(1) {
+  background: #6b7280;
+  color: white;
+}
+
+/* Edit */
+.task-actions button:nth-child(2) {
+  background: #6b7280;
+  color: white;
+}
+
+/* Delete */
+.task-actions button:nth-child(3) {
+  background: #7c7f65;
+  color: white;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 700px) {
+  .task-row {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .task-actions {
+    display: flex;
+    justify-content: center;
+  }
+}

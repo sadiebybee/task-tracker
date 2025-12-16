@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Mogra&family=Racing+Sans+One&family=Radley:ital@0;1&display=swap");
+
+/******* Container *******/
+.task-edit {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: linear-gradient(90deg, #d4cbe5, #bea8aa);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px #2e4057;
+}
+
+.task-edit-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.form-group {
+  display: grid;
+  margin: 1rem;
+}
+
+/******* Form Groups *******/
+.form-group label {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2e4057;
+  font-family: "Racing Sans One", sans-serif;
+}
+
+.form-group input {
+  padding: 1rem;
+}
+
+.form-group-completed {
+  margin: 1rem;
+}
+
+.form-group-completed label {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2e4057;
+  font-family: "Racing Sans One", sans-serif;
+}
+
+.form-group-completed input {
+  margin: 1rem;
+}
+
+/******* Separator *******/
+hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 2px solid #2e4057;
+}
+
+/******* Buttons *******/
+.form-actions button {
+  margin-left: 1rem;
+  padding: 0.4rem 0.9rem;
+  background-color: #6b7280;
+  color: #fff;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form-actions button:hover {
+  transform: scale(1.05);
+}

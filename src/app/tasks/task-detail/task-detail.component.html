@@ -1,1 +1,32 @@
-<p>task-detail works!</p>
+<div class="task-detail">
+  <div class="task-detail-container">
+    <div class="task-header">
+      <h2>{{ task?.title }}</h2>
+      <div class="task-actions">
+        <button routerLink="/tasks/edit/{{ task?.id }}">Edit</button>
+        <button routerLink="/tasks">Back</button>
+      </div>
+    </div>
+    <hr />
+
+    <div class="task-body">
+      <div class="task-item">
+        <strong>Description:</strong>
+        <p>{{ task?.description }}</p>
+      </div>
+      <div class="task-item">
+        <strong>Due Date:</strong>
+        <p>{{ task?.dueDate | date }}</p>
+      </div>
+      <div class="task-item">
+        <strong>Status:</strong>
+        <p>{{ task?.completed ? "Completed" : "Incomplete" }}</p>
+      </div>
+    </div>
+  </div>
+  <!-- <div *ngIf="!task" class="no-task">
+    <p>You don't have any tasks.</p>
+    <button routerLink="/tasks/new">Add a New Task</button>
+    <button routerLink="/tasks">Back to Task List</button>
+  </div> -->
+</div>
