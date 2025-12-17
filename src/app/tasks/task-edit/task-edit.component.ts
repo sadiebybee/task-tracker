@@ -44,7 +44,7 @@ export class TaskEditComponent implements OnInit {
     const value = form.value;
 
     const newTask = new Task(
-      '', // id will be assigned in service if adding
+      '',
       value.title,
       value.description || '',
       value.dueDate || '',

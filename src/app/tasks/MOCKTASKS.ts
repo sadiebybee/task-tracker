@@ -1,7 +1,6 @@
 import { Task } from './task.model';
 
 export const MOCK_TASKS: Task[] = [
-  // Individual tasks
   {
     id: '1',
     title: 'Buy groceries',
@@ -24,7 +23,6 @@ export const MOCK_TASKS: Task[] = [
     completed: true
   },
 
-  // Optional “group tasks” (like your teams example)
   {
     id: '4',
     title: 'Holiday Prep',

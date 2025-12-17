@@ -25,7 +25,7 @@ router.get("/:id", (req, res) => {
 // POST a new task
 router.post("/", (req, res) => {
   const task = new Task({
-    id: nextTaskId(), // optional local ID sequence
+    id: nextTaskId(),
     title: req.body.title,
     description: req.body.description,
     dueDate: req.body.dueDate,

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Mogra&family=Racing+Sans+One&family=Radley:ital@0;1&display=swap");
-/* ===== Task List Container ===== */
+/* Task List */
 .task-list {
   max-width: 1000px;
   margin: 2rem auto;
@@ -18,7 +18,7 @@
   font-family: "Luckiest Guy", sans-serif;
 }
 
-/* ===== Task Controls ===== */
+/* Task Controls */
 .task-controls {
   display: flex;
   justify-content: space-between;
@@ -57,14 +57,14 @@
   transform: scale(1.05);
 }
 
-/* ===== No Tasks Message ===== */
+/* No Tasks */
 .task-list p {
   text-align: center;
   font-size: 1.1rem;
   color: #2e4057;
   margin-top: 1rem;
 }
-/* ===== Task Row ===== */
+/* Task Row */
 .task-row {
   display: grid;
   grid-template-columns: 2fr 1fr auto;
@@ -83,7 +83,7 @@
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
 }
 
-/* ===== Main ===== */
+/* Main */
 .task-main h3 {
   color: #2e4057;
   font-family: "Racing Sans One", sans-serif;
@@ -96,7 +96,7 @@
   color: #6b7280;
 }
 
-/* ===== Status ===== */
+/* Status */
 .task-status {
   font-weight: 700;
   font-family: "Racing Sans One", sans-serif;
@@ -109,7 +109,7 @@
   opacity: 0.7;
 }
 
-/* ===== Actions ===== */
+/* Actions */
 .task-actions button {
   margin-left: 0.5rem;
   padding: 0.4rem 0.9rem;
@@ -142,7 +142,7 @@
   color: white;
 }
 
-/* ===== Responsive ===== */
+/* Responsive */
 @media (max-width: 700px) {
   .task-row {
     grid-template-columns: 1fr;
