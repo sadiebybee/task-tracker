@@ -11,23 +11,21 @@
     <button routerLink="/tasks/new">Add Task</button>
   </div>
 
-  <div *ngIf="tasks.length === 0" class="empty">
-    You have no current tasks.
-  </div>
+  <div *ngIf="tasks.length === 0" class="empty">You have no current tasks.</div>
 
   <div class="task-row" *ngFor="let task of filteredTasks">
-    <div class="task-main" [ngClass]="{'completed': task.completed}">
+    <div class="task-main" [ngClass]="{ completed: task.completed }">
       <h3>{{ task.title }}</h3>
-      <span class="due">Due: {{ task.dueDate | date : 'shortDate' }}</span>
+      <span class="due">Due: {{ task.dueDate | date : "shortDate" }}</span>
     </div>
 
-    <div class="task-status" [ngClass]="{'completed': task.completed}">
-      {{ task.completed ? 'Completed ☻' : 'Incomplete ☹︎' }}
+    <div class="task-status" [ngClass]="{ completed: task.completed }">
+      {{ task.completed ? "Completed ☻" : "Incomplete ☹︎" }}
     </div>
 
     <div class="task-actions">
-      <button routerLink="/tasks/{{ task.id }}">View</button>
-      <button routerLink="/tasks/edit/{{ task.id }}">Edit</button>
+      <button routerLink="/tasks/{{ task._id }}">View</button>
+      <button routerLink="/tasks/edit/{{ task._id }}">Edit</button>
       <button (click)="deleteTask(task)">Delete</button>
     </div>
   </div>

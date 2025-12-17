@@ -56,7 +56,7 @@ export class TaskListComponent implements OnInit, OnDestroy {
   }
 
   deleteTask(task: Task | null) {
-    if (!task) return;
+    if (!task || !task._id) return; // use _id
     if (confirm('Are you sure you want to delete this task?')) {
       this.taskService.deleteTask(task);
     }
