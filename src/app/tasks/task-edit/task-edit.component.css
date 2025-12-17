@@ -73,3 +73,15 @@ hr {
 .form-actions button:hover {
   transform: scale(1.05);
 }
+
+/******* Responsive *******/
+@media (max-width: 768px) {
+  .task-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .task-actions button {
+    width: 48%;
+  }
+}
