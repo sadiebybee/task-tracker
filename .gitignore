@@ -40,3 +40,10 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+
+# IMPORTANT!
+# To Start the Server!
+# 1. Mongosh
+# 2. node server.js
+# 3. ng serve/npm start
